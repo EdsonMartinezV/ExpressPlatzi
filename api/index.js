@@ -23,11 +23,11 @@ const corsOptions = {
 }
 app.use(cors(corsOptions))
 
-app.get('/', (req, res) => {
+app.get('/api/', (req, res) => {
   res.send("Hello World! from Edson's Server")
 })
 
-app.get('/new-route', (req, res) => {
+app.get('/api/new-route', (req, res) => {
   res.send('New Route')
 })
 
